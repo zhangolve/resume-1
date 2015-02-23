@@ -79,6 +79,11 @@ strong {
 .main {
   padding: 40px 55px;
 }
+@media (max-width: 767px) {
+  .main {
+    padding: 10px 16px;
+  }
+}
 .column {
   position: relative;
   min-height: 1px;
@@ -89,41 +94,122 @@ strong {
 .column-12 {
   width: 100%;
 }
+@media (max-width: 992px) {
+  .column-12 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
 .column-11 {
   width: 91.66666667%;
+}
+@media (max-width: 992px) {
+  .column-11 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
 }
 .column-10 {
   width: 83.33333333%;
 }
+@media (max-width: 992px) {
+  .column-10 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
 .column-9 {
   width: 75%;
+}
+@media (max-width: 992px) {
+  .column-9 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
 }
 .column-8 {
   width: 66.66666667%;
 }
+@media (max-width: 992px) {
+  .column-8 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
 .column-7 {
   width: 58.33333333%;
+}
+@media (max-width: 992px) {
+  .column-7 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
 }
 .column-6 {
   width: 50%;
 }
+@media (max-width: 992px) {
+  .column-6 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
 .column-5 {
   width: 41.66666667%;
+}
+@media (max-width: 992px) {
+  .column-5 {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
 }
 .column-4 {
   width: 33.33333333%;
 }
+@media (max-width: 992px) {
+  .column-4 {
+    width: 100%;
+  }
+}
 .column-3 {
   width: 25%;
+}
+@media (max-width: 992px) {
+  .column-3 {
+    width: 75%;
+  }
 }
 .column-2 {
   width: 16.66666667%;
 }
+@media (max-width: 992px) {
+  .column-2 {
+    width: 50%;
+  }
+}
 .column-1 {
   width: 8.33333333%;
 }
+@media (max-width: 992px) {
+  .column-1 {
+    width: 25%;
+  }
+}
 .column-0 {
   width: 0%;
+}
+@media (max-width: 992px) {
+  .column-0 {
+    width: 0%;
+  }
 }
 .first {
   padding-left: 0;
@@ -148,22 +234,24 @@ header {
 }
 .title {
   float: right;
-  overflow-y: hidden;
-  zoom: 1;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .title {
+    float: none;
+    text-align: center;
+  }
 }
 .title h1,
 .title h2 {
   margin: 5px 0;
   line-height: 1;
-  text-align: right;
 }
 .title h1 {
   padding: 5px 0;
-  float: right;
 }
 .title h2 {
   padding: 5px 6px;
-  clear: right;
   color: #008080;
   font-weight: normal;
 }
@@ -179,11 +267,18 @@ header .contact {
   margin: 0;
   padding-left: 16px;
 }
+@media (max-width: 767px) {
+  header .contact {
+    float: none;
+    margin-top: 10px;
+  }
+}
 header .contact li {
   list-style-type: none;
   font-style: normal;
   line-height: 1.4;
   font-size: 18px;
+  word-break: break-all;
 }
 .contact-phone {
   padding-left: 28px;
@@ -256,6 +351,21 @@ header .contact li {
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0, 0);
   content: "\f09e";
+  width: 28px;
+  margin-left: -28px;
+  display: inline-block;
+}
+.contact-wechat {
+  padding-left: 28px;
+}
+.contact-wechat::before {
+  font-family: FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+  content: "\f1d7";
   width: 28px;
   margin-left: -28px;
   display: inline-block;
@@ -579,12 +689,33 @@ section {
   display: inline-block;
 }
 aside {
-  position: fixed;
   right: 0;
+  position: fixed;
   top: 50%;
   transform: translate(0, -50%);
 }
-aside li {
+@media (max-width: 767px) {
+  aside {
+    position: relative;
+    display: table;
+    width: 100%;
+    right: auto;
+    top: 0;
+    transform: none;
+    overflow-y: hidden;
+    zoom: 1;
+  }
+}
+aside .links {
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  aside .links {
+    display: table-row;
+  }
+}
+aside .link {
   list-style-type: none;
   margin-top: 6px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -592,9 +723,17 @@ aside li {
   border-radius: 5px 0 0 5px;
   transition: all 0.3s ease-out;
 }
-aside li:hover,
-aside li:active {
+aside .link:hover,
+aside .link:active {
   background-color: rgba(0, 128, 128, 0.8);
+}
+@media (max-width: 767px) {
+  aside .link {
+    display: table-cell;
+    background-color: #333333;
+    border-radius: 0;
+    text-align: center;
+  }
 }
 aside a {
   width: 100%;
@@ -604,4 +743,24 @@ aside a:visited,
 aside a:hover,
 aside a:active {
   color: white;
+}
+@media (min-width: 992px) {
+  .invisible-lt-sm {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .invisible-lt-sm {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .visible-lt-sm {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  .visible-lt-sm {
+    display: block;
+  }
 }
