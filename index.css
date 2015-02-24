@@ -228,6 +228,7 @@ main {
 }
 header {
   overflow-y: hidden;
+  zoom: 1;
   border-bottom: 2px solid #333333;
   padding-bottom: 5px;
 }
@@ -261,6 +262,7 @@ header {
 }
 address {
   overflow-y: hidden;
+  zoom: 1;
 }
 header .contact {
   float: left;
@@ -379,12 +381,14 @@ section {
 }
 .sec-title-wrapper {
   overflow-y: hidden;
+  zoom: 1;
 }
 .sec-title {
   float: left;
   padding: 0;
   margin: 0 0 0 10px;
   overflow-y: hidden;
+  zoom: 1;
 }
 .sec-title-ch {
   font-size: 20px;
@@ -420,6 +424,7 @@ section {
 }
 .timeline-wrapper {
   overflow-y: hidden;
+  zoom: 1;
   margin-top: -32px;
 }
 .timeline-wrapper::after {
@@ -474,6 +479,8 @@ section {
   margin-left: -21px;
   margin-top: -6px;
   overflow-y: hidden;
+  zoom: 1;
+  z-index: 10;
 }
 .timeline-title {
   margin: 0 0 10px -18px;
@@ -485,7 +492,9 @@ section {
   border-radius: 6px;
   font-weight: normal;
   font-size: 16px;
+  z-index: 1;
   overflow-y: hidden;
+  zoom: 1;
 }
 @media (max-width: 767px) {
   .timeline-title {
@@ -571,6 +580,7 @@ section {
   font-size: 20px;
   margin-bottom: 5px;
   overflow-y: hidden;
+  zoom: 1;
 }
 .language-cert-type {
   float: left;
@@ -717,6 +727,7 @@ aside {
     top: 0;
     transform: none;
     overflow-y: hidden;
+    zoom: 1;
   }
 }
 aside .links {
