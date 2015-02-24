@@ -76,11 +76,11 @@ strong {
     width: 1030px;
   }
 }
-main {
+.main {
   padding: 40px 55px;
 }
 @media (max-width: 767px) {
-  main {
+  .main {
     padding: 10px 16px;
   }
 }
@@ -235,7 +235,6 @@ header {
 .title {
   float: right;
   text-align: right;
-  margin: 0;
 }
 @media (max-width: 767px) {
   .title {
@@ -258,7 +257,6 @@ header {
 }
 .header-qrcode {
   float: left;
-  margin: 0;
 }
 address {
   overflow-y: hidden;
@@ -390,7 +388,7 @@ section {
   overflow-y: hidden;
   zoom: 1;
 }
-.sec-title-ch {
+.sec-title-zh {
   font-size: 20px;
   float: left;
   font-weight: bold;
@@ -450,13 +448,22 @@ section {
 }
 .timeline {
   padding-top: 45px;
-  padding-left: 0;
+  padding-left: 26px;
   border-left: 4px solid #333333;
-  margin: 0 0 0 26px;
+  margin-left: 26px;
 }
 .timeline-item {
   padding-bottom: 14px;
-  list-style-type: none;
+}
+.timeline-item h4 {
+  margin: 0 0 0 -26px;
+  padding: 3px 26px;
+  color: white;
+  background-color: #333333;
+  border-radius: 6px;
+  font-weight: normal;
+  overflow-y: hidden;
+  zoom: 1;
 }
 .timeline-item::before {
   font-family: FontAwesome;
@@ -476,32 +483,8 @@ section {
   line-height: 26px;
   font-size: 20px;
   content: "\f02d";
-  margin-left: -21px;
+  margin-left: -47px;
   margin-top: -6px;
-  overflow-y: hidden;
-  zoom: 1;
-}
-.timeline-title {
-  margin: 0 0 10px -18px;
-  padding: 3px 26px;
-  float: left;
-  width: 100%;
-  color: white;
-  background-color: #333333;
-  border-radius: 6px;
-  font-weight: normal;
-  font-size: 16px;
-  overflow-y: hidden;
-  zoom: 1;
-}
-@media (max-width: 767px) {
-  .timeline-title {
-    border-radius: 0 6px 6px 0;
-  }
-}
-.timeline-content {
-  clear: left;
-  padding-left: 16px;
 }
 .progress {
   border-radius: 4px;
@@ -520,16 +503,15 @@ section {
 .education-name {
   font-size: 32px;
   font-weight: bold;
+  margin-top: 10px;
 }
 .education-description {
+  padding-left: 0;
   margin: 0;
 }
-.education-major,
-.education-honor {
+.education-description li {
   list-style-type: none;
-  line-height: 1.42857143;
-  margin: 0;
-  padding: 0;
+  line-height: 1.4;
 }
 .education .sec-title-wrapper::before {
   content: "\f02d";
@@ -574,9 +556,10 @@ section {
   margin: 0;
   padding: 0;
 }
-.language-cert-wrapper {
+.language-cert {
   font-size: 20px;
   margin-bottom: 5px;
+  list-style-type: none;
   overflow-y: hidden;
   zoom: 1;
 }
@@ -584,22 +567,17 @@ section {
   float: left;
   font-weight: bold;
 }
-.language-cert-wrapper .progress {
+.language-cert .progress {
   float: right;
-  width: 80%;
-  margin: 0;
 }
-@media (max-width: 767px) {
-  .language-cert-wrapper .progress {
-    float: none;
-    width: 100%;
-  }
+.language-cert .progress {
+  width: 80%;
 }
 .language-description {
   padding-left: 0;
   margin: 10px 0;
 }
-.language-desc-item {
+.language-description li {
   list-style-type: none;
   line-height: 1.4;
 }
@@ -630,14 +608,15 @@ section {
 .experience-name {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0;
-}
-.experience-task {
-  padding-left: 0;
-  margin: 0;
+  margin-top: 10px;
 }
 .experience-description {
-  margin: 0;
+  padding-left: 0;
+  margin: 6px 0;
+}
+.experience-description li {
+  list-style-type: none;
+  line-height: 1.4;
 }
 .experience .sec-title-wrapper::before {
   content: "\f135";
@@ -660,8 +639,14 @@ section {
   margin-left: -28px;
   display: inline-block;
 }
+.skills-description,
 .skills-item-description {
   padding-left: 0;
+}
+.skills-description li,
+.skills-item-description li {
+  list-style-type: none;
+  line-height: 1.4;
 }
 .skills-description {
   margin: 0;
@@ -670,18 +655,11 @@ section {
   margin: 10px 0;
 }
 .skills-item-description {
-  margin: 0;
+  margin: 5px 0;
 }
 .skills-item-summary {
   font-size: 18px;
-  margin: 10px 0 5px 0;
-  font-weight: bold;
-}
-.skills-miscellaneous {
-  margin: 10px 0 0 0;
-}
-.skills-miscellaneous .skills-item-description {
-  list-style-type: none;
+  margin: 0;
 }
 .skills .sec-title-wrapper::before {
   content: "\f0ad";
@@ -695,10 +673,10 @@ section {
 .skills-miscellaneous.timeline-item::before {
   content: "\f085";
 }
-.skills-item-description {
+.skills-item-desc-li {
   padding-left: 28px;
 }
-.skills-item-description::before {
+.skills-item-desc-li::before {
   font-family: FontAwesome;
   font-size: inherit;
   text-rendering: auto;
