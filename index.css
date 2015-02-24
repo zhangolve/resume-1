@@ -458,7 +458,7 @@ section {
   padding-bottom: 14px;
   list-style-type: none;
 }
-.timeline-title-wrapper::before {
+.timeline-item::before {
   font-family: FontAwesome;
   font-size: inherit;
   text-rendering: auto;
@@ -478,6 +478,8 @@ section {
   content: "\f02d";
   margin-left: -21px;
   margin-top: -6px;
+  overflow-y: hidden;
+  zoom: 1;
 }
 .timeline-title {
   margin: 0 0 10px -18px;
@@ -532,7 +534,7 @@ section {
 .education .sec-title-wrapper::before {
   content: "\f02d";
 }
-.education-undergraduate.timeline-title-wrapper::before {
+.education-undergraduate.timeline-item::before {
   content: "\f02e";
 }
 .education-major {
@@ -640,7 +642,7 @@ section {
 .experience .sec-title-wrapper::before {
   content: "\f135";
 }
-.experience-internship.timeline-title-wrapper::before {
+.experience-internship.timeline-item::before {
   content: "\f0b1";
 }
 .experience-task {
@@ -684,13 +686,13 @@ section {
 .skills .sec-title-wrapper::before {
   content: "\f0ad";
 }
-.skills-frontend.timeline-title-wrapper::before {
+.skills-frontend.timeline-item::before {
   content: "\f12e";
 }
-.skills-backend.timeline-title-wrapper::before {
+.skills-backend.timeline-item::before {
   content: "\f233";
 }
-.skills-miscellaneous.timeline-title-wrapper::before {
+.skills-miscellaneous.timeline-item::before {
   content: "\f085";
 }
 .skills-item-description {
