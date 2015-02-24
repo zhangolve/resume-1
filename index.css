@@ -76,11 +76,11 @@ strong {
     width: 1030px;
   }
 }
-.main {
+main {
   padding: 40px 55px;
 }
 @media (max-width: 767px) {
-  .main {
+  main {
     padding: 10px 16px;
   }
 }
@@ -235,6 +235,7 @@ header {
 .title {
   float: right;
   text-align: right;
+  margin: 0;
 }
 @media (max-width: 767px) {
   .title {
@@ -257,6 +258,7 @@ header {
 }
 .header-qrcode {
   float: left;
+  margin: 0;
 }
 address {
   overflow-y: hidden;
@@ -388,7 +390,7 @@ section {
   overflow-y: hidden;
   zoom: 1;
 }
-.sec-title-zh {
+.sec-title-ch {
   font-size: 20px;
   float: left;
   font-weight: bold;
@@ -450,18 +452,22 @@ section {
   padding-top: 45px;
   padding-left: 26px;
   border-left: 4px solid #333333;
-  margin-left: 26px;
+  margin: 0 0 0 26px;
+}
+.timeline li {
+  list-style-type: none;
 }
 .timeline-item {
   padding-bottom: 14px;
 }
-.timeline-item h4 {
+.timeline-title {
   margin: 0 0 0 -26px;
   padding: 3px 26px;
   color: white;
   background-color: #333333;
   border-radius: 6px;
   font-weight: normal;
+  font-size: 16px;
   overflow-y: hidden;
   zoom: 1;
 }
@@ -503,15 +509,16 @@ section {
 .education-name {
   font-size: 32px;
   font-weight: bold;
-  margin-top: 10px;
 }
 .education-description {
-  padding-left: 0;
   margin: 0;
 }
-.education-description li {
+.education-major,
+.education-honor {
   list-style-type: none;
-  line-height: 1.4;
+  line-height: 1.42857143;
+  margin: 0;
+  padding: 0;
 }
 .education .sec-title-wrapper::before {
   content: "\f02d";
@@ -556,10 +563,9 @@ section {
   margin: 0;
   padding: 0;
 }
-.language-cert {
+.language-cert-wrapper {
   font-size: 20px;
   margin-bottom: 5px;
-  list-style-type: none;
   overflow-y: hidden;
   zoom: 1;
 }
@@ -567,17 +573,22 @@ section {
   float: left;
   font-weight: bold;
 }
-.language-cert .progress {
+.language-cert-wrapper .progress {
   float: right;
-}
-.language-cert .progress {
   width: 80%;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .language-cert-wrapper .progress {
+    float: none;
+    width: 100%;
+  }
 }
 .language-description {
   padding-left: 0;
   margin: 10px 0;
 }
-.language-description li {
+.language-desc-item {
   list-style-type: none;
   line-height: 1.4;
 }
@@ -608,15 +619,14 @@ section {
 .experience-name {
   font-size: 18px;
   font-weight: bold;
-  margin-top: 10px;
+  margin: 10px 0;
+}
+.experience-task {
+  padding-left: 0;
+  margin: 0;
 }
 .experience-description {
-  padding-left: 0;
-  margin: 6px 0;
-}
-.experience-description li {
-  list-style-type: none;
-  line-height: 1.4;
+  margin: 0;
 }
 .experience .sec-title-wrapper::before {
   content: "\f135";
@@ -639,14 +649,8 @@ section {
   margin-left: -28px;
   display: inline-block;
 }
-.skills-description,
 .skills-item-description {
   padding-left: 0;
-}
-.skills-description li,
-.skills-item-description li {
-  list-style-type: none;
-  line-height: 1.4;
 }
 .skills-description {
   margin: 0;
@@ -655,11 +659,19 @@ section {
   margin: 10px 0;
 }
 .skills-item-description {
-  margin: 5px 0;
+  margin: 0;
 }
 .skills-item-summary {
   font-size: 18px;
-  margin: 0;
+  margin: 10px 0 5px 0;
+  font-weight: bold;
+}
+.skills-miscellaneous {
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+.skills-miscellaneous .skills-item-description {
+  list-style-type: none;
 }
 .skills .sec-title-wrapper::before {
   content: "\f0ad";
@@ -673,10 +685,10 @@ section {
 .skills-miscellaneous.timeline-item::before {
   content: "\f085";
 }
-.skills-item-desc-li {
+.skills-item-description {
   padding-left: 28px;
 }
-.skills-item-desc-li::before {
+.skills-item-description::before {
   font-family: FontAwesome;
   font-size: inherit;
   text-rendering: auto;
