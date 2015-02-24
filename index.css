@@ -509,6 +509,7 @@ section {
 .education-name {
   font-size: 32px;
   font-weight: bold;
+  margin: 10px 0 5px 0;
 }
 .education-description {
   margin: 0;
@@ -619,7 +620,7 @@ section {
 .experience-name {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 10px 0 5px 0;
 }
 .experience-task {
   padding-left: 0;
