@@ -58,8 +58,12 @@ strong {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 40px 55px;
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 5px 10px 55px 10px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -74,14 +78,6 @@ strong {
 @media (min-width: 1200px) {
   .container {
     width: 1030px;
-  }
-}
-main {
-  padding: 40px 55px;
-}
-@media (max-width: 767px) {
-  main {
-    padding: 10px 16px;
   }
 }
 .column {
@@ -218,8 +214,8 @@ main {
   padding-right: 0;
 }
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: -0.1px;
+  margin-right: -0.1px;
   overflow: hidden;
 }
 .header-qrcode .qrcode-img {
@@ -273,6 +269,7 @@ header .contact {
   header .contact {
     float: none;
     margin-top: 10px;
+    padding-left: 5px;
   }
 }
 header .contact li {
@@ -468,6 +465,7 @@ section {
   border-radius: 6px;
   font-weight: normal;
   font-size: 16px;
+  line-height: 1.33;
   overflow-y: hidden;
   zoom: 1;
 }
@@ -491,6 +489,15 @@ section {
   content: "\f02d";
   margin-left: -47px;
   margin-top: -6px;
+  position: absolute;
+}
+.timeline-content {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .timeline-content {
+    margin-left: -10px;
+  }
 }
 .progress {
   border-radius: 4px;
@@ -510,9 +517,6 @@ section {
   font-size: 32px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-}
-.education-description {
-  margin: 0;
 }
 .education-major,
 .education-honor {
@@ -626,9 +630,6 @@ section {
   padding-left: 0;
   margin: 0;
 }
-.experience-description {
-  margin: 0;
-}
 .experience .sec-title-wrapper::before {
   content: "\f135";
 }
@@ -652,9 +653,6 @@ section {
 }
 .skills-item-description {
   padding-left: 0;
-}
-.skills-description {
-  margin: 0;
 }
 .skills-item {
   margin: 10px 0;
