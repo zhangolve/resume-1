@@ -666,7 +666,7 @@ section {
   font-weight: bold;
 }
 .skills-miscellaneous {
-  margin: 10px 0 0 0;
+  margin-top: 10px;
   padding: 0;
 }
 .skills-miscellaneous .skills-item-description {
