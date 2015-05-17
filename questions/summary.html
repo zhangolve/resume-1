@@ -1,4 +1,9 @@
-<p>A：
+<!DOCTYPE html><!--[if lte IE 8]>
+<html lang="" class="lte-ie8">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="">
+<!--<![endif]--><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="tomorrow.css"><link rel="stylesheet" href="questions.css"></head><body><div class="container"><main><p>A：
 阿里实习面试笔记</p>
 <p>从2月28号将邮件发给内推的师兄，到4月2号收到实习意向书，过了漫长的一个月，终于走完了阿里实习应聘的流程。这里记录一下中间的过程，以便自己总结，也希望能帮助到后来的人。</p>
 <h2 id="-">简历准备</h2>
@@ -60,20 +65,21 @@
 <a href="http://blog.csdn.net/dwf07223/article/details/12259119">http://blog.csdn.net/dwf07223/article/details/12259119</a>
 <a href="http://blog.csdn.net/hustcqb/article/details/12220549">http://blog.csdn.net/hustcqb/article/details/12220549</a>
 <a href="http://www.cnblogs.com/jerry19880126/archive/2012/08/04/2623309.html">http://www.cnblogs.com/jerry19880126/archive/2012/08/04/2623309.html</a></p>
-<pre><code class="lang-javascript">var a = 0;
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = <span class="hljs-number">0</span>;
 
-function one(){
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">one</span><span class="hljs-params">()</span><span class="hljs-comment">{
   for (var i = 0; i &lt; 10; ++i) {
     setTimeout(function() {
       a += i;
-    }, 0);
+    }</span>, 0);</span>
   }
 }
 
-function two() {
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">two</span><span class="hljs-params">()</span> <span class="hljs-comment">{
   alert(a);
-}
+}</span>
 
-one();
-setTimeout(two, 0);
+<span class="hljs-title">one</span><span class="hljs-params">()</span>;</span>
+setTimeout(two, <span class="hljs-number">0</span>);
 </code></pre>
+</main></div></body></html>

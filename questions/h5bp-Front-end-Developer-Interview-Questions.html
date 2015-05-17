@@ -1,4 +1,9 @@
-<h1 id="front-end-job-interview-questions">Front-end Job Interview Questions</h1>
+<!DOCTYPE html><!--[if lte IE 8]>
+<html lang="" class="lte-ie8">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="">
+<!--<![endif]--><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="tomorrow.css"><link rel="stylesheet" href="questions.css"></head><body><div class="container"><main><h1 id="front-end-job-interview-questions">Front-end Job Interview Questions</h1>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#general-questions">General Questions</a></li>
@@ -98,12 +103,12 @@
 <ul>
 <li>What needs to be changed to properly make it an IIFE?</li>
 <li><p><strong>Answer</strong>: the definition of the function along can not be identified as an <em>expression</em> by the interpreter. If it could, the following ambiguity will occur:</p>
-<pre><code class="lang-javascript">function foo() {}
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span><span class="hljs-params">()</span> <span class="hljs-comment">{}</span>
 
-(a=1+2);
+<span class="hljs-params">(a=1+2)</span>;</span>
 </code></pre>
 <p>To tell the interpreter that this <em>is</em> an expression, use parenthese to enclose the expression, like this:</p>
-<pre><code class="lang-javascript">(function foo(){})();
+<pre><code class="lang-javascript"><span class="hljs-list">(<span class="hljs-keyword">function</span> foo<span class="hljs-list">()</span><span class="hljs-collection">{}</span>)</span><span class="hljs-list">()</span><span class="hljs-comment">;</span>
 </code></pre>
 </li>
 </ul>
@@ -111,15 +116,15 @@
 <li>What&#39;s the difference between a variable that is: <code>null</code>, <code>undefined</code> or <code>undeclared</code>?<ul>
 <li>How would you go about checking for any of these states?<ul>
 <li><code>null</code> means this variable is empty, <code>undefined</code> means this variable is declared but not defined (initialized), <code>undeclared</code> means this variable is not even declared (its identifier is not even in the symbol table).</li>
-<li>It can be illustrated as follows:<pre><code class="lang-javascript">a;  // here a is undeclared
-var a;  // here a is declared, but undefined
-a = 1;  // here a is declared and defined and not empty (null)
-a = null;  // here a is empty
+<li>It can be illustrated as follows:<pre><code class="lang-javascript"><span class="hljs-operator">a</span>; <span class="hljs-comment"> // here a is undeclared</span>
+var <span class="hljs-operator">a</span>; <span class="hljs-comment"> // here a is declared, but undefined</span>
+<span class="hljs-operator">a</span> = <span class="hljs-number">1</span>; <span class="hljs-comment"> // here a is declared and defined and not empty (null)</span>
+<span class="hljs-operator">a</span> = <span class="hljs-constant">null</span>; <span class="hljs-comment"> // here a is empty</span>
 </code></pre>
 </li>
 <li>To check <code>null</code>, use <code>if (a === null)</code> (use <code>===</code> instead of <code>==</code>, because <code>==</code> will trigger type coersion and result in <code>undefined == null</code>)</li>
 <li>To check <code>undefined</code>, use <code>if (typeof a === &quot;undefined&quot;)</code>. Use <code>typeof</code> instead of checking it directly because in some environment <code>undefined</code> is not a reserved identifier and can be used to hold other values.</li>
-<li>To check <code>undeclared</code>, use try-catch.<pre><code class="lang-javascript">try {a} catch(e) { /* a is not avaliable*/ }
+<li>To check <code>undeclared</code>, use try-catch.<pre><code class="lang-javascript"><span class="hljs-tag">try</span> {<span class="hljs-tag">a</span>} <span class="hljs-tag">catch</span>(e) { <span class="hljs-comment">/* a is not avaliable*/</span> }
 </code></pre>
 </li>
 </ul>
@@ -165,8 +170,8 @@ a = null;  // here a is empty
 </li>
 <li>Explain &quot;hoisting&quot;.<ul>
 <li>variable <em>declaration</em> is <em>hoisted before definition</em>, to the top of the scope. The interpreter will first scan the scope to find out what are declared, then declare them (but not initialize them), and initialize them until the execution reach their definitions.</li>
-<li>This feature can result in the following situation:<pre><code class="lang-javascript">a;  // here a is declared but not defined.
-var a = 1;
+<li>This feature can result in the following situation:<pre><code class="lang-javascript">a;  <span class="hljs-comment">// here a is declared but not defined.</span>
+<span class="hljs-variable"><span class="hljs-keyword">var</span> a</span> = <span class="hljs-number">1</span>;
 </code></pre>
 </li>
 </ul>
@@ -177,7 +182,7 @@ var a = 1;
 <li>Difference between document load event and document ready event?</li>
 <li>What is the difference between <code>==</code> and <code>===</code>?</li>
 <li>Explain the same-origin policy with regards to JavaScript.</li>
-<li>Make this work:<pre><code class="lang-javascript">duplicate([1,2,3,4,5]); // [1,2,3,4,5,1,2,3,4,5]
+<li>Make this work:<pre><code class="lang-javascript"><span class="hljs-function">duplicate</span>(<span class="hljs-attr_selector">[1,2,3,4,5]</span>); <span class="hljs-comment">// [1,2,3,4,5,1,2,3,4,5]</span>
 </code></pre>
 </li>
 <li>Why is it called a Ternary expression, what does the word &quot;Ternary&quot; indicate?</li>
@@ -207,46 +212,46 @@ var a = 1;
 </ul>
 <h4 id="coding-questions-">Coding Questions:</h4>
 <p><em>Question: What is the value of <code>foo</code>?</em></p>
-<pre><code class="lang-javascript">var foo = 10 + &#39;20&#39;;
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> foo = <span class="hljs-number">10</span> + <span class="hljs-string">'20'</span>;
 </code></pre>
 <p><code>&quot;1020&quot;</code>. Since <code>10</code> and <code>&#39;20&#39;</code> does not have the same type, the interpreter will perform type coersion for them. Here <code>10</code> will be converted to <code>&quot;10&quot;</code> first, then the two string <code>&quot;10&quot;</code> and <code>&quot;20&quot;</code> will be added together, which is will produce the same result as string concatenation.</p>
 <p><em>Question: How would you make this work?</em></p>
-<pre><code class="lang-javascript">add(2, 5); // 7
-add(2)(5); // 7
+<pre><code class="lang-javascript">add<span class="hljs-comment">(2, 5)</span>; <span class="hljs-comment">// 7</span>
+add<span class="hljs-comment">(2)</span><span class="hljs-comment">(5)</span>; <span class="hljs-comment">// 7</span>
 </code></pre>
-<pre><code class="lang-javascript">function add(a, b) {
-  var len = arguments.length;
-  if (len == 2) {
-    return a + b;
-  } else if (len == 1) {
-    return (function subadd(b) {return a + b});
-  } else {
-    throw (&quot;There should be 1 or 2 arguments&quot;);
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span><span class="hljs-params">(a, b)</span> </span>{
+  <span class="hljs-keyword">var</span> len = <span class="hljs-built_in">arguments</span>.length;
+  <span class="hljs-keyword">if</span> (len == <span class="hljs-number">2</span>) {
+    <span class="hljs-keyword">return</span> a + b;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (len == <span class="hljs-number">1</span>) {
+    <span class="hljs-keyword">return</span> (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">subadd</span><span class="hljs-params">(b)</span> </span>{<span class="hljs-keyword">return</span> a + b});
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-keyword">throw</span> (<span class="hljs-string">"There should be 1 or 2 arguments"</span>);
   }
 }
 </code></pre>
 <p>The key is the second conditional statement where<code>subadd</code> will create a clousre over <code>add</code>, capturing the first <code>a</code> passed to the function.</p>
 <p><em>Question: What value is returned from the following statement?</em></p>
-<pre><code class="lang-javascript">&quot;i&#39;m a lasagna hog&quot;.split(&quot;&quot;).reverse().join(&quot;&quot;);
+<pre><code class="lang-javascript"><span class="hljs-string">"i'm a lasagna hog"</span>.<span class="hljs-keyword">split</span>(<span class="hljs-string">""</span>).<span class="hljs-keyword">reverse</span>().<span class="hljs-keyword">join</span>(<span class="hljs-string">""</span>);
 </code></pre>
 <p><code>&quot;goh angasal a m&#39;i&quot;</code>. <code>split(&quot;&quot;)</code> will split the string <em>character by character</em>, <code>reverse()</code> will reverse these characters, <code>join(&quot;&quot;)</code> will join them up.</p>
 <p><em>Question: What is the value of <code>window.foo</code>?</em></p>
-<pre><code class="lang-javascript">( window.foo || ( window.foo = &quot;bar&quot; ) );
+<pre><code class="lang-javascript"><span class="hljs-list">( <span class="hljs-keyword">window</span>.foo || <span class="hljs-list">( <span class="hljs-keyword">window</span>.foo = <span class="hljs-string">"bar"</span> )</span> )</span><span class="hljs-comment">;</span>
 </code></pre>
 <p><code>&quot;bar&quot;</code>. Because <code>window.foo</code> is not defined, the first condition is falsy and the second condition will be checked, then expression enclosing the assignment will then be executed.</p>
 <p><em>Question: What is the outcome of the two alerts below?</em></p>
-<pre><code class="lang-javascript">var foo = &quot;Hello&quot;;
-(function() {
-  var bar = &quot; World&quot;;
-  alert(foo + bar);
-})();
-alert(foo + bar);
+<pre><code class="lang-javascript">var foo = <span class="hljs-string">"Hello"</span><span class="hljs-comment">;</span>
+<span class="hljs-list">(<span class="hljs-keyword">function</span><span class="hljs-list">()</span> {
+  var bar = <span class="hljs-string">" World"</span><span class="hljs-comment">;</span>
+  alert<span class="hljs-list">(<span class="hljs-keyword">foo</span> + bar)</span><span class="hljs-comment">;</span>
+})</span><span class="hljs-list">()</span><span class="hljs-comment">;</span>
+alert<span class="hljs-list">(<span class="hljs-keyword">foo</span> + bar)</span><span class="hljs-comment">;</span>
 </code></pre>
 <p>The first alert is <code>Hello World</code>, the second will throw an error. In the IIFE, <code>foo</code> can be accessed since it is in the outer scope, so the first alert is the concatenation of the two strings, <code>Hello World</code>. But after the IIFE, <code>bar</code> is no longer accessible, because it is local to the IIFE. In effect, it is <strong>not even declared</strong> at that moment. Therefore the second alert, trying to access the undeclared <code>bar</code>, will throw an errror.</p>
 <p><em>Question: What is the value of <code>foo.length</code>?</em></p>
 <pre><code class="lang-javascript">var foo = [];
-foo.push(1);
-foo.push(2);
+foo.push<span class="hljs-comment">(1)</span>;
+foo.push<span class="hljs-comment">(2)</span>;
 </code></pre>
 <p><code>2</code>.</p>
 <h4 id="fun-questions-">Fun Questions:</h4>
@@ -260,3 +265,4 @@ foo.push(2);
 <h4 id="contributors-">Contributors:</h4>
 <p>This document started in 2009 as a collaboration of <a href="http://twitter.com/paul_irish">@paul_irish</a> <a href="http://twitter.com/bentruyman">@bentruyman</a> <a href="http://twitter.com/cowboy">@cowboy</a> <a href="http://twitter.com/ajpiano">@ajpiano</a>  <a href="http://twitter.com/slexaxton">@SlexAxton</a> <a href="http://twitter.com/boazsender">@boazsender</a> <a href="http://twitter.com/miketaylr">@miketaylr</a> <a href="http://twitter.com/vladikoff">@vladikoff</a> <a href="http://twitter.com/gf3">@gf3</a> <a href="http://twitter.com/jon_neal">@jon_neal</a> <a href="http://twitter.com/sambreed">@sambreed</a> and <a href="http://twitter.com/iansym">@iansym</a>.</p>
 <p>It has since received contributions from <a href="https://github.com/h5bp/Front-end-Developer-Interview-Questions/graphs/contributors">100 developers</a>.</p>
+</main></div></body></html>
