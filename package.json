@@ -20,6 +20,7 @@
     "gulp-less": "^3.0.0",
     "gulp-livereload": "^3.8.0",
     "gulp-markdown": "^1.0.0",
+    "highlight.js": "^8.6.0",
     "jade": "^1.9.2",
     "st": "^0.5.3"
   },

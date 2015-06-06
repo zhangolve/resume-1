@@ -2,3 +2,5 @@ node_modules
 dist
 *~
 design
+.publish
+temp*

@@ -5,11 +5,25 @@ var path = require('path');
 var http = require('http');
 var st = require('st');
 
+function highlight(str) {
+    return str.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/`(.+?)`/g, '<strong>$1</strong>');
+}
+
 // Jade to html
 gulp.task('jade', function() {
+  var locals = require('./i18n/zh-CN/dict.js');
+  
+  var resume_data = require('./resume.json');
+  for (var item in resume_data) {
+      locals[item] = resume_data[item];
+  }
+
+  locals.highlight = highlight;
+
   return gulp.src('./src/jade/index.jade')
     .pipe(plugins.jade({
-      locals: require('./ch_locals.js')
+      locals: locals
     }))
     .pipe(gulp.dest('./dist/'))
     .pipe(plugins.livereload());
@@ -89,6 +103,7 @@ gulp.task('server', ['build'], function(done) {
   http.createServer(
     st({ path: __dirname + '/dist', index: 'index.html', cache: false })
   ).listen(8000, done);
+  console.log("preview listening on http://localhost:8000");
 });
 
 gulp.task('deploy', ['build'], function() {
