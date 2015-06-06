@@ -3,7 +3,7 @@
 <![endif]-->
 <!--[if gt IE 8]><!-->
 <html lang="">
-<!--<![endif]--><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="/diary/css/global.css"><link rel="stylesheet" href="tomorrow.css"><link rel="stylesheet" href="questions.css"></head><body><div class="container"><main><h1 id="front-end-job-interview-questions">Front-end Job Interview Questions</h1>
+<!--<![endif]--><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="tomorrow.css"><link rel="stylesheet" href="questions.css"></head><body><div class="container"><main><h1 id="front-end-job-interview-questions">Front-end Job Interview Questions</h1>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#general-questions">General Questions</a></li>
@@ -219,12 +219,12 @@ var <span class="hljs-operator">a</span>; <span class="hljs-comment"> // here a 
 <pre><code class="lang-javascript">add<span class="hljs-comment">(2, 5)</span>; <span class="hljs-comment">// 7</span>
 add<span class="hljs-comment">(2)</span><span class="hljs-comment">(5)</span>; <span class="hljs-comment">// 7</span>
 </code></pre>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span><span class="hljs-params">(a, b)</span> </span>{
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">a, b</span>) </span>{
   <span class="hljs-keyword">var</span> len = <span class="hljs-built_in">arguments</span>.length;
   <span class="hljs-keyword">if</span> (len == <span class="hljs-number">2</span>) {
     <span class="hljs-keyword">return</span> a + b;
   } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (len == <span class="hljs-number">1</span>) {
-    <span class="hljs-keyword">return</span> (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">subadd</span><span class="hljs-params">(b)</span> </span>{<span class="hljs-keyword">return</span> a + b});
+    <span class="hljs-keyword">return</span> (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">subadd</span>(<span class="hljs-params">b</span>) </span>{<span class="hljs-keyword">return</span> a + b});
   } <span class="hljs-keyword">else</span> {
     <span class="hljs-keyword">throw</span> (<span class="hljs-string">"There should be 1 or 2 arguments"</span>);
   }
@@ -232,7 +232,7 @@ add<span class="hljs-comment">(2)</span><span class="hljs-comment">(5)</span>; <
 </code></pre>
 <p>The key is the second conditional statement where<code>subadd</code> will create a clousre over <code>add</code>, capturing the first <code>a</code> passed to the function.</p>
 <p><em>Question: What value is returned from the following statement?</em></p>
-<pre><code class="lang-javascript"><span class="hljs-string">"i'm a lasagna hog"</span>.<span class="hljs-keyword">split</span>(<span class="hljs-string">""</span>).<span class="hljs-keyword">reverse</span>().<span class="hljs-keyword">join</span>(<span class="hljs-string">""</span>);
+<pre><code class="lang-javascript"><span class="hljs-string">"i'm a lasagna hog"</span>.split<span class="hljs-params">(<span class="hljs-string">""</span>)</span>.reverse<span class="hljs-params">()</span>.join<span class="hljs-params">(<span class="hljs-string">""</span>)</span>;
 </code></pre>
 <p><code>&quot;goh angasal a m&#39;i&quot;</code>. <code>split(&quot;&quot;)</code> will split the string <em>character by character</em>, <code>reverse()</code> will reverse these characters, <code>join(&quot;&quot;)</code> will join them up.</p>
 <p><em>Question: What is the value of <code>window.foo</code>?</em></p>
@@ -249,9 +249,9 @@ alert<span class="hljs-list">(<span class="hljs-keyword">foo</span> + bar)</span
 </code></pre>
 <p>The first alert is <code>Hello World</code>, the second will throw an error. In the IIFE, <code>foo</code> can be accessed since it is in the outer scope, so the first alert is the concatenation of the two strings, <code>Hello World</code>. But after the IIFE, <code>bar</code> is no longer accessible, because it is local to the IIFE. In effect, it is <strong>not even declared</strong> at that moment. Therefore the second alert, trying to access the undeclared <code>bar</code>, will throw an errror.</p>
 <p><em>Question: What is the value of <code>foo.length</code>?</em></p>
-<pre><code class="lang-javascript">var foo = [];
-foo.push<span class="hljs-comment">(1)</span>;
-foo.push<span class="hljs-comment">(2)</span>;
+<pre><code class="lang-javascript">var foo = []<span class="hljs-comment">;</span>
+foo.push(1)<span class="hljs-comment">;</span>
+foo.push(2)<span class="hljs-comment">;</span>
 </code></pre>
 <p><code>2</code>.</p>
 <h4 id="fun-questions-">Fun Questions:</h4>
