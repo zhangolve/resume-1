@@ -12,21 +12,20 @@
     "type": "git",
     "url": "git://github.com/joyeecheung/resume.git"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-connect": "^2.2.0",
+    "gulp-gh-pages": "^0.5.2",
     "gulp-jade": "^1.0.0",
+    "gulp-layout": "0.0.3",
     "gulp-less": "^3.0.0",
     "gulp-livereload": "^3.8.0",
-    "gulp-markdown": "^1.0.0",
-    "highlight.js": "^8.6.0",
-    "jade": "^1.9.2",
-    "st": "^0.5.3"
-  },
-  "devDependencies": {
-    "gulp-gh-pages": "^0.5.2",
-    "gulp-layout": "0.0.3",
     "gulp-load-plugins": "^0.10.0",
-    "gulp-sourcemaps": "^1.5.2"
+    "gulp-markdown": "^1.0.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "highlight.js": "^8.6.0",
+    "jade": "^1.10.0",
+    "st": "^0.5.3"
   }
 }
