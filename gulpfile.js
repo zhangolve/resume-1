@@ -32,6 +32,24 @@ gulp.task('jade', function() {
 // less to css
 gulp.task('less', function() {
   gulp.src('./src/less/questions.less')
+    .pipe(plugins.less({
+      paths: [path.join(__dirname, 'src', 'less', 'includes'),
+              path.join(__dirname, 'src', 'less', 'components')]
+    }))
+    .pipe(plugins.minifyCss({compatibility: 'ie9'}))
+    .pipe(gulp.dest('./dist/questions/'))
+
+  gulp.src('./src/less/index.less')
+    .pipe(plugins.less({
+      paths: [path.join(__dirname, 'src', 'less', 'includes'),
+              path.join(__dirname, 'src', 'less', 'components')]
+    }))
+    .pipe(plugins.minifyCss({compatibility: 'ie9'}))
+    .pipe(gulp.dest('./dist/'))
+});
+
+gulp.task('less-debug', function() {
+  gulp.src('./src/less/questions.less')
     .pipe(plugins.sourcemaps.init())
     .pipe(plugins.less({
       paths: [path.join(__dirname, 'src', 'less', 'includes'),
@@ -97,16 +115,21 @@ gulp.task('watch', ['server'], function() {
   gulp.watch('./resume.json', ['jade']);
 });
 
-gulp.task('build', ['jade', 'less', 'static', 'demo', 'questions']);
+gulp.task('build', ['jade', 'less-debug', 'static', 'demo', 'questions']);
+gulp.task('build-for-deploy', ['jade', 'less', 'static', 'demo', 'questions']);
 
-gulp.task('server', ['build'], function(done) {
+function server(done) {
   http.createServer(
     st({ path: __dirname + '/dist', index: 'index.html', cache: false })
   ).listen(8000, done);
   console.log("preview listening on http://localhost:8000");
-});
+}
 
-gulp.task('deploy', ['build'], function() {
+gulp.task('server', ['build'], server);
+
+gulp.task('preview', ['build-for-deploy'], server);
+
+gulp.task('deploy', ['build-for-deploy'], function() {
   return gulp.src('./dist/**/*')
     .pipe(plugins.ghPages());
 });
