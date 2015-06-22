@@ -104,7 +104,7 @@
     "demo": "http://joyeecheung.github.io/resume/",
     "description": [
       "这份在线简历的生成器",
-      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成样式",
+      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成**响应式**样式",
       "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
     ],
     "stack": ["jade", "less", "gulp"],
