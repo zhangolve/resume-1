@@ -102,6 +102,7 @@ gulp.task('watch', ['server'], function() {
   gulp.watch('./interview/questions/**/*', ['questions']);
   gulp.watch(['./src/**/*.jade', './resume.json',
               './i18n/**/*.js'], ['jade']);
+  gulp.watch('./static/**/*', ['static']);
   gulp.watch('./src/**/*.less', ['less']);
 });
 
