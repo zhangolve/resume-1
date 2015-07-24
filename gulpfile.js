@@ -36,7 +36,7 @@ var lessPath = [path.join(__dirname, 'src', 'less', 'includes'),
                 path.join(__dirname, 'src', 'less', 'components')];
 
 function less2css(srcPath, destPath, debug) {
-  if(debug) {
+  if(!debug) {
     return gulp.src(srcPath)
       .pipe(plugins.less({ paths: lessPath }))
       .pipe(plugins.minifyCss({ compatibility: 'ie9' }))
