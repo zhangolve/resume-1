@@ -1,7 +1,7 @@
 {
   "name": "joyee-resume",
   "version": "1.0.0",
-  "description": "",
+  "description": "Read resume data from a JSON file and generate a static web page.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +14,7 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-connect": "^2.2.0",
+    "gulp": "^3.9.0",
     "gulp-gh-pages": "^0.5.2",
     "gulp-jade": "^1.0.0",
     "gulp-layout": "0.0.3",
@@ -27,5 +26,12 @@
     "gulp-sourcemaps": "^1.5.2",
     "highlight.js": "^8.6.0",
     "jade": "^1.10.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/joyeecheung/resume/issues"
+  },
+  "homepage": "https://github.com/joyeecheung/resume",
+  "keywords": [
+    "resume"
+  ]
 }
