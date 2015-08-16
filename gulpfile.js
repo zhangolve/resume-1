@@ -5,8 +5,8 @@ var path = require('path');
 var gls = require('gulp-live-server');
 
 var server = gls.static('dist', 8000);
-/**************** Utility **********************/
 
+/**************** Utility **********************/
 function highlight(str) {
   return str.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/`(.+?)`/g, '<strong>$1</strong>');
@@ -97,12 +97,6 @@ gulp.task('questions', function() {
     }))
     .pipe(gulp.dest('./dist/questions/'));
 });
-
-function reload() {
-  console.log('reload!');
-  console.log(arguments);
-  server.notify.apply(server, arguments);
-}
 
 /****************** Watch ****************/
 gulp.task('watch', ['server'], function() {
