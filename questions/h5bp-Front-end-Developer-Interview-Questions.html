@@ -3,7 +3,7 @@
 <![endif]-->
 <!--[if gt IE 8]><!-->
 <html lang="">
-<!--<![endif]--><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="tomorrow.css"><link rel="stylesheet" href="questions.css"></head><body><div class="container"><main><h1 id="front-end-job-interview-questions">Front-end Job Interview Questions</h1>
+<!--<![endif]--><head><meta charset="utf-8"><title></title><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="tomorrow.css"><link rel="stylesheet" href="questions.css"></head><body><div class="container"><main><p>#Front-end Job Interview Questions</p>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ol>
 <li><a href="#general-questions">General Questions</a></li>
@@ -182,7 +182,7 @@ var <span class="hljs-operator">a</span>; <span class="hljs-comment"> // here a 
 <li>Difference between document load event and document ready event?</li>
 <li>What is the difference between <code>==</code> and <code>===</code>?</li>
 <li>Explain the same-origin policy with regards to JavaScript.</li>
-<li>Make this work:<pre><code class="lang-javascript"><span class="hljs-function">duplicate</span>(<span class="hljs-attr_selector">[1,2,3,4,5]</span>); <span class="hljs-comment">// [1,2,3,4,5,1,2,3,4,5]</span>
+<li>Make this work:<pre><code class="lang-javascript">duplicate([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>,<span class="hljs-number">5</span>]); <span class="hljs-comment">// [1,2,3,4,5,1,2,3,4,5]</span>
 </code></pre>
 </li>
 <li>Why is it called a Ternary expression, what does the word &quot;Ternary&quot; indicate?</li>
@@ -216,8 +216,8 @@ var <span class="hljs-operator">a</span>; <span class="hljs-comment"> // here a 
 </code></pre>
 <p><code>&quot;1020&quot;</code>. Since <code>10</code> and <code>&#39;20&#39;</code> does not have the same type, the interpreter will perform type coersion for them. Here <code>10</code> will be converted to <code>&quot;10&quot;</code> first, then the two string <code>&quot;10&quot;</code> and <code>&quot;20&quot;</code> will be added together, which is will produce the same result as string concatenation.</p>
 <p><em>Question: How would you make this work?</em></p>
-<pre><code class="lang-javascript">add<span class="hljs-comment">(2, 5)</span>; <span class="hljs-comment">// 7</span>
-add<span class="hljs-comment">(2)</span><span class="hljs-comment">(5)</span>; <span class="hljs-comment">// 7</span>
+<pre><code class="lang-javascript">add(<span class="hljs-number">2</span>, <span class="hljs-number">5</span>); <span class="hljs-comment">// 7</span>
+add(<span class="hljs-number">2</span>)(<span class="hljs-number">5</span>); <span class="hljs-comment">// 7</span>
 </code></pre>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">a, b</span>) </span>{
   <span class="hljs-keyword">var</span> len = <span class="hljs-built_in">arguments</span>.length;
@@ -232,7 +232,7 @@ add<span class="hljs-comment">(2)</span><span class="hljs-comment">(5)</span>; <
 </code></pre>
 <p>The key is the second conditional statement where<code>subadd</code> will create a clousre over <code>add</code>, capturing the first <code>a</code> passed to the function.</p>
 <p><em>Question: What value is returned from the following statement?</em></p>
-<pre><code class="lang-javascript"><span class="hljs-string">"i'm a lasagna hog"</span>.split<span class="hljs-params">(<span class="hljs-string">""</span>)</span>.reverse<span class="hljs-params">()</span>.join<span class="hljs-params">(<span class="hljs-string">""</span>)</span>;
+<pre><code class="lang-javascript"><span class="hljs-string">"i'm a lasagna hog"</span>.<span class="hljs-keyword">split</span>(<span class="hljs-string">""</span>).<span class="hljs-keyword">reverse</span>().<span class="hljs-keyword">join</span>(<span class="hljs-string">""</span>);
 </code></pre>
 <p><code>&quot;goh angasal a m&#39;i&quot;</code>. <code>split(&quot;&quot;)</code> will split the string <em>character by character</em>, <code>reverse()</code> will reverse these characters, <code>join(&quot;&quot;)</code> will join them up.</p>
 <p><em>Question: What is the value of <code>window.foo</code>?</em></p>
