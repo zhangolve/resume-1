@@ -1,214 +1,148 @@
 {
   "data_lang": "zh-CN",
-  "ga_id": "UA-63818301-2",
-  "resume_title": "张秋怡 - 个人简历",
-  "name": "张秋怡",
-  "repo": "https://github.com/joyeecheung/resume.git",
-  "job_description": ["前端工程师", "软件工程师"],
+  
+  "resume_title": "张兴旺 - 个人简历",
+  "name": "张兴旺",
+  "repo": "https://github.com/zhangolve/resume1.git",
+  "job_description": ["前端工程师实习生"],
   "contact": {
-    "email": "joyeec9h3@gmail.com",
+    "email": "zhangolve@gmail.com",
+	"phone":"13172183212",
     "wechat": {
-      "id": "joyee-cheung",
-      "qrcode": "static/wechat.svg"
+      "id": "hktkdy001",
+      "qrcode": "static/aboutme.svg"
     },
     "sinaweibo": {
-      "id": "SYSU_Joyee",
-      "url": "http://weibo.com/2930876843"
+      "id": "继续海阔天空",
+      "url": "http://weibo.com/13823zxw"
     },
     "github": {
-      "id": "joyeecheung"
+      "id": "zhangolve"
     },
     "blog": {
-      "url": "http://joyeecheung.cnblogs.com"
+      "url": "http://hktkdy.com"
     }
   },
   "links": [{
     "type": "repo",
-    "url": "https://github.com/joyeecheung/resume"
+    "url": "https://github.com/zhangolve/resume-1"
 
   }, {
     "type": "pdf",
-    "url": "static/joyeecheung.pdf"
+    "url": "static/resume.pdf"
 
   }, {
     "type": "zhihu",
-    "url": "http://www.zhihu.com/people/zhang-qiu-yi-27/"
-  }, {
-    "type": "doubanbook",
-    "url": "http://book.douban.com/people/joyee-cheung/"
+    "url": "https://www.zhihu.com/people/zhang-hai-26"
   }],
   "education": [{
     "type": "undergraduate",
-    "name": "中山大学",
-    "major": "软件工程",
+    "name": "洛阳理工学院",
+    "major": "自动化",
     "start": "2012",
     "end": "2016",
     "honor": [
-      "2012 - 2013 学年度校**三等奖学金**",
-      "2013 - 2014 学年度校**一等奖学金**"
+      "2012 - 2013 学年度校优秀志愿者",
+      "全国大学生英语竞赛河南赛区优秀奖"
     ]
   }],
   "language": [{
     "type": "english",
     "certificate": [{
-      "type": "CET-4",
-      "full": "710",
-      "score": "679"
+      "type": "CET-4"
+      
     }, {
-      "type": "CET-6",
-      "full": "710",
-      "score": "616"
+      "type": "CET-6"
     }],
     "description": [
+		"四六级均为在大一大二时一次性通过",
       "能流畅阅读英文专业书籍、文档及其他资料",
-      "可无字幕观看 MOOC 课程、开发者大会视频",
-      "能够在英文邮件列表、Stack Overflow 等社区正常交流"
+      "可无字幕观看Youtube上相关的视频教程",
+      "能够在Stack Overflow及Quora等国外社区正常交流"
     ]
   }],
   "experience": [{
     "type": "internship",
-    "techtype": "frontend",
-    "place": "阿里巴巴 B2B-ICBU 数据应用部",
-    "start": "2015.07",
-    "end": "至今",
-    "name": "前端开发",
+    
+    "place": "深圳市科源自动化技术有限公司",
+    "start": "2015.08",
+    "end": "2016.02",
+    "name": "技术支持",
     "description": [
-      "开发支持 i18n 的数据可视化组件",
-      "解决外部系统遗留的 bug 及浏览器兼容问题（`IE7+`）",
-      "使用 `SVG` 等技术开发内部系统数据可视化图表"
-    ],
-    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
-    "compatibility": "IE8+"
-  }, {
-    "type": "internship",
-    "techtype": "frontend",
-    "place": "埃森哲广州 CDC",
-    "start": "2014.08",
-    "end": "2014.09",
-    "name": "前端开发",
+      "学习了施耐德PLC编程",
+      "学习了施耐德变频器，伺服电机，伺服驱动器的使用",
+      "在实习期间学着更好地与同事沟通",
+	  "正是在这次实习期间我立志要转向前端开发"
+    ]
+    
+  },{
+    "type": "project",
+    
+    "project_type": "personal",
+    "name": "wikipedia-read",
+    "source": "http://codepen.io/zhangolve/pen/mEBObB",
+    "demo": "http://hktkdy.com/wikipedia-read",
     "description": [
-      "参与某集团内部办公系统（OA）的前端开发，基于 `jQuery UI` 与 `Bootstrap` 实现前端组件及数据交互",
-      "解决遗留的 bug 及浏览器兼容问题（`IE8+`）",
-      "使用 `Grunt` 及 `Less` 完成皮肤开发"
+      "利用维基百科API来自建的搜索页面",
+      "能够按照要求搜索英文维基和中文维基",
+      "能够实现按动页面上的按钮跳转到随机的维基页面",
+	  "在按动搜索按键后，使用CSS3动态效果过渡"
     ],
-    "stack": ["jqueryui", "bootstrap", "jquery", "grunt", "less"],
-    "compatibility": "IE8+"
-  }, {
-    "type": "internship",
-    "techtype": "nodejs",
-    "place": "东西科技",
-    "start": "2014.03",
-    "end": "2014.06",
-    "name": "Node.js 开发",
-    "description": [
-      "开发并维护封装微信公众平台 API 的 `Express 中间件`",
-      "使用 `Mocha`、`Chai` 及 `CoffeeScript` 编写单元测试",
-      "结合 `MongoDB` 开发微信公众平台 Demo",
-      "编写 `bash` 脚本，使用 `ApacheBench` 对后端程序进行压力测试与资源使用分析，辅助服务器选型"
-    ],
-    "stack": ["nodejs", "express", "mocha", "chai", "coffeescript", "mongodb"]
+    "stack": ["Jquery", "API", "CSS3"]
+    
   }, {
     "type": "project",
-    "techtype": "frontend",
+    
     "project_type": "personal",
-    "name": "Resume",
-    "source": "https://github.com/joyeecheung/resume",
-    "demo": "http://joyeecheung.github.io/resume/",
+    "name": "Weather-app",
+    "source": "http://codepen.io/zhangolve/pen/OXgwjX",
+    "demo": "http://hktkdy.com/weather-app-v2",
     "description": [
-      "这份在线简历的生成器",
-      "从 JSON 读取数据，使用 `Jade` 模板生成 HTML，`Less` 生成**响应式**样式",
-      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
-    ],
-    "stack": ["jade", "less", "gulp"],
-    "compatibility": "IE9+"
-  }, {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "personal",
-    "name": "My Tech Diary",
-    "source": "https://github.com/joyeecheung/diary",
-    "demo": "http://joyeecheung.github.io/diary/",
-    "description": [
-      "一个技术日记站点生成器，从 `git submodule` 中读取 `Markdown` 文件，结合 `Jade` 模板，生成静态站点",
-      "通过 `PostCSS` 将依照实验性 CSS 标准编写的代码转译使用",
-      "前端 JavaScript 代码以 `CommonJS` 形式组织，使用 `WebPack` 进行打包处理",
-      "使用 `Gulp` 驱动页面生成、架设本地服务器、帮助部署到 GitHub Pages"
+      "一个小的app，调用了开发的天气API",
+      "能够获取即使的温度、状态等天气信息",
+      "完全为静态页面，直接部署到了博客上",
+      "使用了font-Awesome图标库"
     ],
     "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
     "compatibility": "IE9+"
-  }, {
-    "type": "project",
-    "techtype": "frontend",
-    "project_type": "personal",
-    "name": "Virtual Bookcase",
-    "source": "https://github.com/joyeecheung/virtual-bookcase",
-    "description": [
-      "基于 `Three.js` 实现的 3D 虚拟图书室",
-      "使用 `Express` 与 `MongoDB` 提供图书数据 API",
-      "使用 `RequireJS` 加载模块，`Grunt` 驱动工作流，`Web Worker` 优化图像处理"
-    ],
-    "stack": ["three.js", "mongodb", "express"],
-    "compatibility": "IE10+"
-  }],
-  "skills": [{
+  }],  
+  
+   "skills": [{
     "type": "frontend",
     "item": [{
       "summary": "`HTML` / `CSS`",
       "description": [
-        "能够编写语义化的 `HTML`，模块化的 `CSS`，实现较复杂的布局与动画",
-        "熟悉已标准化的 `HTML5` / `CSS3` 新特性，实验项目中能尝试使用未广泛实现的新标准"
+        "熟悉HTML常用标签",
+        "熟悉CSS的基本规则，能够根据设计图纸进行简单的切图",
+		"熟悉Bootstrap框架，能够利用Bootstrap框架开发"
       ]
     }, {
-      "summary": "`ECMAScript`（`JavaScript`）",
+      "summary": "JavaScript",
       "description": [
-        "熟悉 `ECMAScript`（`JavaScript`），对 `JavaScript 引擎`及相关 JIT 技术有一定的了解",
-        "了解 `ECMAScript` 新标准与相关后处理工具并能在项目中使用"
-      ]
-    }, {
-      "summary": "`DOM` / `BOM` 及常见 `Web API`",
-      "description": [
-        "熟悉原生 `DOM` 与 `BOM` 的使用及相关标准（W3C / WHATWG），有桌面 / 移动端前端组件的开发经验",
-        "对 `WebGL` / `Web Workers` / `WebSocket` / `Web Components` / `SVG` 等 API 有一定的使用经验",
-        "阅读过 `WebKit` / `Blink` 源码中的部分实现，了解常见的 Web API **兼容性**问题及其解决方案"
+        "熟悉Javascript语言编程",
+        "能够利用Jquery库进行开发"
+		
       ]
     }, {
       "summary": "前端工程实践",
       "description": [
-        "使用 `Meteor` / `AngularJS` / `Polymer` 编写过简单的 CRUD SPA，了解 `Backbone.js` / `React` 及前端 `MV*` 模型",
-        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用、定制与扩展, 阅读过部分源代码",
-        "在项目中使用过 `Sea.js` / `RequireJS` / `Browserify` / `Bower` / `WebPack` 等多种模块化解决方案",
-        "在项目中使用过 `Less` / `Sass` / `PostCSS` / `CoffeeScript` / `TypeScript` 等预处理/后处理工具",
-        "日常使用 `Grunt` 或 `Gulp` 改进工作流",
-        "掌握基本的前端兼容性处理、性能优化知识与技巧，并能在项目中加以实践"
-      ]
-    }]
-  }, {
-    "type": "backend",
-    "item": [{
-      "summary": "`Node.js`",
-      "description": [
-        "能够使用 `Node.js API` / `Express` / `Koa` 搭建简单的后端程序与数据库交互、渲染模板及提供 `RESTful API`",
-        "了解异步 I/O 及事件驱动的服务器模型，掌握常见的**异步编程**解决方案",
-        "能编写简单的 `Express` / `Connect` / `Koa` 中间件，使用 `Mocha` 与 `Chai` 编写单元测试"
-      ]
-    }, {
-      "summary": "其他",
-      "description": [
-        "使用 `Tornado` / `Flask`（`Python`） 搭建过简单的服务器",
-        "有使用 `MongoDB` / `MySQL` 数据库，`Redis` 缓存，`nginx` 反向代理的经验",
-        "了解 `HTTP`（1.x / 2）、 `TCP/IP`、 `WebSocket` 等协议"
+        "对PHP有一定了解",
+        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用",
+        "在日常使用中，能够利用Chrome dev tools进行前端项目调试",
+        "使用http://codepen.io 在线编辑器进行前端代码编写"
+        
       ]
     }]
   }, {
     "type": "miscellaneous",
     "item": [
-      "三年 `Linux` 使用经验，熟悉常用命令与配置，能编写简单的 `bash` 脚本",
-      "熟悉多种平台与编译环境下的 `C` / `C++` 及其新标准，编写过简单的解释器、数据库引擎、3D 图形程序及 Node.js 扩展，能阅读 `WebKit` / `Blink、V8` 等常接触项目的源代码并加以利用",
-      "熟悉 `Python`，能实现简单的数据及图像处理工具、自动化脚本、爬虫、机器学习算法及分布式程序（参见 GitHub）",
-      "具备基本的 `Web 安全`知识（`X.509` / `XSS` / `CSRF` 等）",
-      "能够使用 `LaTeX` 及 `Markdown` 编写得体的中英文文档或论文，具备良好的技术交流能力",
-      "日常使用 `Git` 与 `Sublime Text` / `Vim` 进行开发，也乐于尝试新工具",
-      "能够使用 `Photoshop` / `Illustrator` 完成简单的设计"
+      "能够利用bandwagonhost网站的VPS搭建服务器 ",
+      "曾经使用Python语言进行爬虫实验，利用python爬取刘未鹏博客并制作电子书，利用python抓取我校教务处新闻",
+      "具备基本的Web安全知识",
+      "能够熟练使用 `Markdown` 进行文档的写作 ",
+      "能够使用Git 进行版本控制和协作开发",
+      "能够使用基于Hexo的博客系统写作博客文章",
+	  "本人性格开朗，做事有毅力，踏实稳重，对待事情有责任心。对待事情能够保持冷静客观的态度，有自己个人的看法。学习上，能够主动学习，学习能力很强，在学习中遇到问题也不会轻言放弃，往往是在自己的坚持之下和身边朋友的支持下将问题顺利解决。"
     ]
   }]
 }
