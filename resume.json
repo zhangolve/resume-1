@@ -4,10 +4,10 @@
   "resume_title": "张兴旺 - 个人简历",
   "name": "张兴旺",
   "repo": "https://github.com/zhangolve/resume1.git",
-  "job_description": ["前端工程师实习生"],
+  "job_description": ["前端工程师(偏JS方向)"],
   "contact": {
     "email": "zhangolve@gmail.com",
-	"phone":"13172183212",
+    "phone":"13172183212",
     "wechat": {
       "id": "hktkdy001",
       "qrcode": "static/aboutme.svg"
@@ -55,94 +55,121 @@
       "type": "CET-6"
     }],
     "description": [
-		"四六级均为在大一大二时一次性通过",
-      "能流畅阅读英文专业书籍、文档及其他资料",
-      "可无字幕观看Youtube上相关的视频教程",
-      "能够在Stack Overflow及Quora等国外社区正常交流"
+    "四六级均为在大一大二时一次性通过",
+    "能流畅阅读英文专业书籍、文档及其他资料",
+    "能够在Stack Overflow及Quora等国外社区正常交流"
     ]
   }],
   "experience": [{
     "type": "internship",
-    
     "place": "深圳市科源自动化技术有限公司",
     "start": "2015.08",
     "end": "2016.02",
-    "name": "技术支持",
+    "name": "技术支持(实习)",
     "description": [
       "学习了施耐德PLC编程",
       "学习了施耐德变频器，伺服电机，伺服驱动器的使用",
       "在实习期间学着更好地与同事沟通",
-	  "正是在这次实习期间我立志要转向前端开发"
+      "正是在这次实习期间我立志要转向前端开发"
     ]
     
-  },{
-    "type": "project",
-    
-    "project_type": "personal",
-    "name": "wikipedia-read",
-    "source": "http://codepen.io/zhangolve/pen/mEBObB",
-    "demo": "http://hktkdy.com/wikipedia-read",
+  },
+  {
+    "type": "internship",
+    "place": "北京市中科软科技股份有限公司",
+    "start": "2016.09",
+    "end": "2017.02",
+    "name": "前端开发工程师",
     "description": [
-      "利用维基百科API来自建的搜索页面",
-      "能够按照要求搜索英文维基和中文维基",
-      "能够实现按动页面上的按钮跳转到随机的维基页面",
-	  "在按动搜索按键后，使用CSS3动态效果过渡"
+      "担任项目组前端开发工作",
+      "与后端同事配合进行项目开发",
+      "根据需求，将业务逻辑转化为前端代码",
+      "正是在这次实习期间我立志要转向前端开发"
+    ]
+  },
+  {
+    "type": "project",
+    "project_type": "personal",
+    "name": "廊坊市健康卡充值客户端(内网项目)",
+    "description": [
+      "担任该项目前端主要开发工作",
+      "使用React 作为项目前端框架",
+      "使用 `ANT DESIGN `作为设计语言",
+      "使用ES6编写前端代码",
+      "项目是公司为廊坊卫计委开发，面向廊坊各大医院，实现健康卡充值等服务"
     ],
-    "stack": ["Jquery", "API", "CSS3"]
+    "stack": ["ANT DESIGN", "React", "ES6"]
     
   }, {
     "type": "project",
-    
     "project_type": "personal",
-    "name": "Weather-app",
-    "source": "http://codepen.io/zhangolve/pen/OXgwjX",
-    "demo": "http://hktkdy.com/weather-app-v2",
+    "name": "zhihu-answer-convert-to-md-by-node",
+    "source": "https://github.com/zhangolve/zhihu-answer-convert-to-md-by-node",
     "description": [
-      "一个小的app，调用了开发的天气API",
-      "能够获取即使的温度、状态等天气信息",
-      "完全为静态页面，直接部署到了博客上",
-      "使用了font-Awesome图标库"
+      "一个开源个人项目",
+      "使用`Node.js`爬虫爬去知乎答案转为md文件",
+      "使用了ES6语法编写",
+      "使用Eslint进行代码检查",
+      "Github 上10+ star",
+      "使用Async库进行异步控制"
     ],
-    "stack": ["jade", "postcss", "markdown",  "webpack", "gulp"],
-    "compatibility": "IE9+"
-  }],  
+    "stack": ["Node.js", "async", "markdown",  "ES6","Babel" ]
+   
+  }, {
+    "type": "project",
+    "project_type": "personal",
+    "name": "search-engine-filter",
+    "source": "https://github.com/zhangolve/search-engine-filter",
+    "description": [
+      "一个开源个人项目,Chrome扩展",
+      "使用原生Javascript编写",
+      "实现了在百度、谷歌等搜索页面对搜索结果的自定义过滤",
+      "使用Eslint进行代码检查"
+      
+    ],
+    "stack": ["Chrome", "原生js",  "ES6" ]
+   
+  }
+  ],  
   
-   "skills": [{
+   "skills": [
+   {
     "type": "frontend",
     "item": [{
       "summary": "`HTML` / `CSS`",
       "description": [
-        "熟悉HTML常用标签",
-        "熟悉CSS的基本规则，能够根据设计图纸进行简单的切图",
-		"熟悉Bootstrap框架，能够利用Bootstrap框架开发"
+        "熟悉HTML5规范",
+        "熟悉CSS3的基本规则，了解浏览器的兼容性",
+        "熟悉Bootstrap框架，能够利用Bootstrap框架开发",
+        "熟悉Ant design 规范，能够利用Ant design 快速开发"
       ]
     }, {
       "summary": "JavaScript",
       "description": [
         "熟悉Javascript语言编程",
-        "能够利用Jquery库进行开发"
-		
+        "熟悉Ecmascript 6+",
+        "能够利用Jquery库进行开发",
+        "对Lodash工具库有一定了解，项目中有应用"
+    
       ]
     }, {
       "summary": "前端工程实践",
       "description": [
-        "对PHP有一定了解",
-        "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` 的使用",
+        "熟悉 `jQuery`  / `Bootstrap` 的使用",
         "在日常使用中，能够利用Chrome dev tools进行前端项目调试",
-        "使用http://codepen.io 在线编辑器进行前端代码编写"
-        
+        "配置并使用webpack",
+        "使用Eslint进行代码检查"
       ]
     }]
   }, {
     "type": "miscellaneous",
     "item": [
-      "能够利用bandwagonhost网站的VPS搭建服务器 ",
-      "曾经使用Python语言进行爬虫实验，利用python爬取刘未鹏博客并制作电子书，利用python抓取我校教务处新闻",
-      "具备基本的Web安全知识",
-      "能够熟练使用 `Markdown` 进行文档的写作 ",
-      "能够使用Git 进行版本控制和协作开发",
-      "能够使用基于Hexo的博客系统写作博客文章",
-	  "本人性格开朗，做事有毅力，踏实稳重，对待事情有责任心。对待事情能够保持冷静客观的态度，有自己个人的看法。学习上，能够主动学习，学习能力很强，在学习中遇到问题也不会轻言放弃，往往是在自己的坚持之下和身边朋友的支持下将问题顺利解决。"
+      "开源爱好者，Github活跃用户",
+      "偶尔翻译外文技术文章 ，翻译的文章曾进入百度FEX 技术周刊",
+      "具备基本的Web 网络安全知识",
+      "能够熟练使用 `Markdown` 进行文档写作 ",
+      "能够较熟练使用Git 进行版本控制和协作开发",
+      "本人性格开朗，做事有毅力，踏实稳重，对待事情有责任心。对待事情能够保持冷静客观的态度，有自己个人的看法。学习上，能够主动学习，学习能力很强，在学习中遇到问题也不会轻言放弃,希望能够在一个注重工程师文化的团队里工作"
     ]
   }]
 }
