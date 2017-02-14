@@ -60,20 +60,7 @@
     "能够在Stack Overflow及Quora等国外社区正常交流"
     ]
   }],
-  "experience": [{
-    "type": "internship",
-    "place": "深圳市科源自动化技术有限公司",
-    "start": "2015.08",
-    "end": "2016.02",
-    "name": "技术支持(实习)",
-    "description": [
-      "学习了施耐德PLC编程",
-      "学习了施耐德变频器，伺服电机，伺服驱动器的使用",
-      "在实习期间学着更好地与同事沟通",
-      "正是在这次实习期间我立志要转向前端开发"
-    ]
-    
-  },
+  "experience": [
   {
     "type": "internship",
     "place": "北京市中科软科技股份有限公司",
@@ -106,28 +93,12 @@
     "name": "zhihu-answer-convert-to-md-by-node",
     "source": "https://github.com/zhangolve/zhihu-answer-convert-to-md-by-node",
     "description": [
-      "一个开源个人项目",
-      "使用`Node.js`爬虫爬去知乎答案转为md文件",
+      "一个开源个人项目,使用`Node.js`爬虫爬去知乎答案转为md文件",
       "使用了ES6语法编写",
-      "使用Eslint进行代码检查",
-      "Github 上10+ star",
-      "使用Async库进行异步控制"
+      "使用Eslint进行代码检查,使用Async库进行异步控制",
+      "另外其他开源小项目可访问本人Github"
     ],
     "stack": ["Node.js", "async", "markdown",  "ES6","Babel" ]
-   
-  }, {
-    "type": "project",
-    "project_type": "personal",
-    "name": "search-engine-filter",
-    "source": "https://github.com/zhangolve/search-engine-filter",
-    "description": [
-      "一个开源个人项目,Chrome扩展",
-      "使用原生Javascript编写",
-      "实现了在百度、谷歌等搜索页面对搜索结果的自定义过滤",
-      "使用Eslint进行代码检查"
-      
-    ],
-    "stack": ["Chrome", "原生js",  "ES6" ]
    
   }
   ],  
