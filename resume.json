@@ -70,8 +70,8 @@
     "description": [
       "担任项目组前端开发工作",
       "与后端同事配合进行项目开发",
-      "根据需求，将业务逻辑转化为前端代码",
-      "正是在这次实习期间我立志要转向前端开发"
+      "根据需求，将业务逻辑转化为前端代码"
+      
     ]
   },
   {
@@ -110,17 +110,18 @@
       "summary": "`HTML` / `CSS`",
       "description": [
         "熟悉HTML5规范",
-        "熟悉CSS3的基本规则，了解浏览器的兼容性",
+        "熟悉CSS3的基本规则，使用Flexbox布局，了解浏览器的兼容性",
         "熟悉Bootstrap框架，能够利用Bootstrap框架开发",
         "熟悉Ant design 规范，能够利用Ant design 快速开发"
       ]
     }, {
       "summary": "JavaScript",
       "description": [
-        "熟悉Javascript语言编程",
-        "熟悉Ecmascript 6+",
+        "熟悉JavaScript语言编程",
+        "熟悉EcmaScript 6+",
         "能够利用Jquery库进行开发",
-        "对Lodash工具库有一定了解，项目中有应用"
+        "熟悉React框架",
+        "能够使用原生JavaScript，不依赖其他库开发"
     
       ]
     }, {
