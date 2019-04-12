@@ -4,7 +4,7 @@
   "resume_title": "张兴旺 - 个人简历",
   "name": "张兴旺",
   "repo": "https://github.com/zhangolve/resume1.git",
-  "job_description": ["前端工程师(偏JS方向)"],
+  "job_description": ["前端工程师(偏JS方向)","全栈开发"],
   "contact": {
     "email": "zhangolve@gmail.com",
     "phone":"13172183212",
@@ -100,6 +100,19 @@
     ],
     "stack": ["Node.js", "async", "markdown",  "ES6","Babel" ]
    
+  },
+  {
+    "type": "internship",
+    "place": "北京丽家丽婴婴童用品股份有限公司",
+    "start": "2017.05",
+    "end": "2019.05",
+    "name": "全栈开发工程师",
+    "description": [
+      "担任项目组全栈开发工作",
+      "开发维护丽家公司旗下官网，微商城，app等",
+      "根据需求，将业务逻辑转化为前端代码",
+      "具有良好的业务沟通能力和表达能力"
+    ]
   }
   ],  
   
@@ -119,7 +132,6 @@
       "description": [
         "熟悉JavaScript语言编程",
         "熟悉EcmaScript 6+",
-        "能够利用Jquery库进行开发",
         "熟悉React框架",
         "能够使用原生JavaScript，不依赖其他库开发"
     
@@ -129,6 +141,7 @@
       "description": [
         "熟悉 `jQuery`  / `Bootstrap` 的使用",
         "在日常使用中，能够利用Chrome dev tools进行前端项目调试",
+        "前端项目优化加载速度，访问速度，提升用户体验",
         "配置并使用webpack",
         "使用Eslint进行代码检查"
       ]
@@ -137,9 +150,8 @@
     "type": "miscellaneous",
     "item": [
       "开源爱好者，Github活跃用户",
-      "偶尔翻译外文技术文章 ，翻译的文章曾进入百度FEX 技术周刊",
-      "具备基本的Web 网络安全知识",
-      "能够熟练使用 `Markdown` 进行文档写作 ",
+      "linux用户，熟悉linux操作系统",
+      "具备基本的Web网络安全知识",
       "能够较熟练使用Git 进行版本控制和协作开发",
       "本人性格开朗，做事有毅力，踏实稳重，对待事情有责任心。对待事情能够保持冷静客观的态度，有自己个人的看法。学习上，能够主动学习，学习能力很强，在学习中遇到问题也不会轻言放弃,希望能够在一个注重工程师文化的团队里工作"
     ]
